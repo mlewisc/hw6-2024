@@ -75,6 +75,7 @@ muteButton.addEventListener('click', () => {
 
 slider.addEventListener('change', () => {
 	volumeElem.innerHTML = `${slider.value}%`;
+	videoElem.volume = slider.value / 100; 
 });
 
 oldButton.addEventListener('click', () => {
@@ -83,6 +84,5 @@ oldButton.addEventListener('click', () => {
 
 originalButton.addEventListener('click', () => {
 	videoElem.classList.remove('oldSchool');
-})
-
+});
 
