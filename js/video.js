@@ -42,7 +42,7 @@ window.addEventListener('load', () => {
 
 playButton.addEventListener("click", () => {
 	videoElem.play();
-	volumeElem.innerHTML = document.querySelector('#slider').value;
+	volumeElem.innerHTML = `${document.querySelector('#slider').value}%`;
 });
 
 pauseButton.addEventListener('click', () => {
@@ -74,7 +74,7 @@ muteButton.addEventListener('click', () => {
 });
 
 slider.addEventListener('change', () => {
-	volumeElem.innerHTML = slider.value;
+	volumeElem.innerHTML = `${slider.value}%`;
 });
 
 oldButton.addEventListener('click', () => {
